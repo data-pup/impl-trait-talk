@@ -33,6 +33,25 @@ found [here][4].
 [3]: http://aturon.github.io/blog/2015/09/28/impl-trait/
 [4]: https://blog.rust-lang.org/2018/05/10/Rust-1.26.html
 
+## Brief Aside
+
+Before we delve into `impl Trait`, I want to pass a helpful trick along that
+I wish I knew earlier on while learning Rust.
+
+`rustup` is the tool used to install and manage Rust toolchains, and it will
+also help you navigate documentation for Rust! If you'd like to read the
+Rust Programming Language book yourself, you can use this command:
+
+```
+rustup doc --book
+```
+
+Documentation for the standard library can also be found with this command:
+
+```
+rustup doc --std
+```
+
 ## What is `impl Trait`?
 
 ...
