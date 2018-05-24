@@ -75,3 +75,8 @@ that uses iterator adaptors such as ‘map’ or ‘filter’, especially when t
 adaptors might change for different conditions.
 
 ‘impl Trait’ also makes it much easier to return closures!
+
+### Demos
+
+Demos at this point. See code examples.
+
