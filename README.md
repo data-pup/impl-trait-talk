@@ -54,5 +54,24 @@ rustup doc --std
 
 ## What is `impl Trait`?
 
-...
+The ‘impl Trait’ feature provides the idea of “existential types,” which sounds
+complex but this makes more sense when it is demonstrated. Essentially, it means
+that we might not know the specific type of an object, but we do know a trait
+that it implements.
 
+If you are familiar with interfaces in C#, Go, or TypeScript, this might look
+familiar when you see an example. We will briefly cover some of the use cases
+for this, and then move on to a quick demo!
+
+## When is `impl Trait` useful?
+
+Previously, we could work around the lack of this feature by using Boxes. This
+is essentially Rust’s term for a pointer. The downside to this however, is that
+it requires allocating space on the heap, which is much slower than using the
+stack.
+
+Aside from performance benefits, this is useful when we are working with code
+that uses iterator adaptors such as ‘map’ or ‘filter’, especially when the
+adaptors might change for different conditions.
+
+‘impl Trait’ also makes it much easier to return closures!
